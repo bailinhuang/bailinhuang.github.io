@@ -18,10 +18,7 @@ h6 {
   font-weight: 700;
 }
 
-.pf-header{ 
-  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("img/bg-masthead.jpg"); */
-  /* background-image: url("./img/bg-masthead.jpg");  */
-  
+.pf-header{  
   min-height: 30rem;
   position: relative;
   display: table;
@@ -71,10 +68,30 @@ section{
   margin-bottom: 3rem;
 }
 
+.exp-img-container{
+  padding: 1rem 1.5rem;
+  box-sizing: content-box;
+  height: 5rem; 
+}
+
+@media (min-width: 992px){ 
+  .exp-img-container{
+    padding: 3rem 3.5rem;
+    box-sizing: content-box;
+    height: 5rem; 
+  }
+}
+
 .experience-card-image{
-  padding-top: 2rem;
+  /* padding-top: 2rem;
   width: 50%;
-  height: auto;
+  height: auto; */
+  width: 100%;
+}
+
+.exp-card-text{
+  margin: 1rem 3rem;
+  text-align: center;
 }
 
 .service-icon {
@@ -88,6 +105,11 @@ section{
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+.skill-icon-row{
+  display: flex;
+  justify-content: center;
+}
+
 .container-prof-pic{
   margin: 0%;
   width: 30%;
@@ -95,7 +117,45 @@ section{
   margin-bottom: 2rem;
 }
 
+.skill-icon-container{
+  margin-bottom: 3rem;
+}
+
+@media(min-width:992){
+  .skill-icon-container{
+    margin-bottom: 0rem;
+  }
+}
+
 .prof-pic{
   width: 30%;
   height: auto;
+}
+
+.about-content-row{
+  justify-content: center;
+}
+
+.about-content{
+  max-width: 30rem;
+  margin: 0;
+}
+
+.footer{
+  padding-top: 2rem; 
+}
+
+.social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #3D567F;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer{
+  margin-bottom: 2rem;
 }
