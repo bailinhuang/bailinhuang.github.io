@@ -18,6 +18,10 @@ h6 {
   font-weight: 700;
 }
 
+.h2-title{
+  margin-bottom: 3rem;
+}
+
 .pf-header{  
   min-height: 30rem;
   position: relative;
@@ -59,6 +63,13 @@ section{
   /* background-color: #95A5BE; */
   background-color: #3D567F;
 }
+
+footer{ 
+  text-align: center;
+  padding-bottom: 2rem;
+  background-color: #3D567F;
+  margin-bottom: 0rem;
+}
  
 .bg-white{
   background-color: white;
@@ -67,6 +78,7 @@ section{
 .experience-card-deck{
   margin-bottom: 3rem;
 }
+/* 576 767 */
 
 .exp-img-container{
   padding: 1rem 1.5rem;
@@ -102,7 +114,7 @@ section{
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0 3px  rgba(0, 0, 0, 0.1);
 }
 
 .skill-icon-row{
@@ -118,7 +130,7 @@ section{
 }
 
 .skill-icon-container{
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 @media(min-width:992){
@@ -154,8 +166,4 @@ section{
   background-color: #3D567F;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.footer{
-  margin-bottom: 2rem;
 }

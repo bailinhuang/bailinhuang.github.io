@@ -13,8 +13,6 @@
   <link href="icons/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
   <link href="icons/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,55 +21,44 @@
   <header class="pf-header d-flex">
     <div class="container  my-auto">
       <h1 class="mb-1">Bailin Huang</h1>
-      <a class="btn btn-dark btn-xl js-scroll-trigger" href="#experience">My Experience</a>
+      <a class="btn btn-dark btn-xl " href="#education">My Experience</a>
     </div>
     <div class="overlay"></div>
   </header>
 
-  <!-- Experience -->
-  <section class="content-section bg-light" id="experience">
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Experience</h2>
-          <p class="lead mb-5">Computer Sciences at University of Costa Rica</p>
-        </div>
-      </div>
-      <div class="card-deck experience-card-deck">
-        <div class="card">
-          <div class="row">
-            <div class="col">
-              <div class="exp-img-container">
-
-                <img class="card-img-top experience-card-image" src="./img/cicanum-logo.png" alt="logo of CICANUM">
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <!-- <h4 class="card-title">Support</h4> -->
-            <p class="card-text exp-card-text">Tasks included database backup and recovery, data handling, Visual Basic
-              legacy software support and maintenance. Developed a tool to compare and check dosimeter radiation
-              levels.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="row">
-            <div class="col">
-              <div class="exp-img-container">
-                <img class="card-img-top experience-card-image" src="./img/ecci-full-logo.png" alt="logo of computer sciences school of university of costa rica">
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <!-- <h4 class="card-title">Assistant</h4> -->
-            <p class="card-text exp-card-text">Professor's assistant at the Programming Principles course using Python.
-              Tasks included evaluating homework, projects, and explaining concepts to engineer undergraduate students.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Education -->
+  <section class="education bg-light" id="education">
+    <div class="container">
       <div class="row">
         <div class="col">
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#skills">My Skills</a>
+          <h2 class="h2-title">Education</h2>
+          <div class="card-deck experience-card-deck">
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="exp-img-container">
+                    <img class="card-img-top experience-card-image" src="./img/ecci-full-logo.png" alt="logo of CICANUM">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text exp-card-text">Coursing fourth year of Computer Science Undergraduate Degree.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col">
+                  <div class="exp-img-container">
+                    <img class="card-img-top experience-card-image" src="./img/logo-black.4495add9.svg" alt="logo of computer sciences school of university of costa rica">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text exp-card-text">Coursing the Web Immersive Program.</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-dark btn-xl" href="#skills">Skills</a>
         </div>
       </div>
     </div>
@@ -125,16 +112,17 @@
           </h4>
         </div>
       </div>
+      <a class="btn btn-dark btn-xl " href="#portfolio">My Portfolio</a>
   </section>
 
   <!-- Portfolio -->
-  <section class="content-section bg-white" id="projects">
+  <section class="content-section bg-white" id="portfolio">
     <div class="container">
       <div class="content-section-heading ">
         <h2 class="mb-0">Portfolio</h2>
         <h3 class="text-secondary mb-5">Recent Projects</h3>
         <h2 class="mb-5">
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="https://github.com/bailinhuang">GitHub</i></a>
+          <a class="btn btn-dark btn-xl " href="https://github.com/bailinhuang">GitHub</i></a>
         </h2>
         <div class="card-deck">
           <div class="card">
@@ -160,14 +148,61 @@
                 theory and developed using Java.</p>
             </div>
           </div>
+        </div> 
+        <a class="btn btn-dark btn-xl" href="#experience">My Experience</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Experience -->
+  <section class="content-section" id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="text-white">Experience</h2>
+          <p class="lead mb-5 text-white">Computer Sciences at University of Costa Rica</p>
+        </div>
+      </div>
+      <div class="card-deck experience-card-deck">
+        <div class="card">
+          <div class="row">
+            <div class="col">
+              <div class="exp-img-container">
+
+                <img class="card-img-top experience-card-image" src="./img/cicanum-logo.png" alt="logo of CICANUM">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text exp-card-text">Tasks included database backup and recovery, data handling, Visual Basic
+              legacy software support and maintenance. Developed a tool to compare and check dosimeter radiation
+              levels.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col">
+              <div class="exp-img-container">
+                <img class="card-img-top experience-card-image" src="./img/ecci-full-logo.png" alt="logo of computer sciences school of university of costa rica">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text exp-card-text">Professor's assistant at the Programming Principles course using Python.
+              Tasks included evaluating homework, projects, and explaining concepts to engineer undergraduate students.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a class="btn btn-dark btn-xl " href="#about">About</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="content-section  text-white" id="about">
+  <section class="content-section bg-white" id="about">
     <div class="container ">
       <h2 class="mb-4">About</h2>
       <div class="row">
@@ -186,7 +221,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer class="footer">
     <div class="container">
       <ul class="list-inline">
         <li class="list-inline-item">
@@ -200,7 +235,7 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://github.com/bailinhq">
+          <a class="social-link rounded-circle text-white" href="https://github.com/bailinhuang">
             <i class="icon-social-github">
             </i>
           </a>
@@ -209,7 +244,6 @@
     </div>
   </footer>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

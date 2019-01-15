@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "watch-http-server -o"
+    "test": "live-server"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/bailinhuang/portfolio#readme",
   "dependencies": {
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "jquery-scroll-indicator-bullets": "^2.0.0",
+    "live-server": "^1.2.1"
   },
-  "devDependencies": {
-    "live-server": "^1.2.1",
-    "watch-http-server": "^0.7.6"
-  }
+  "devDependencies": {}
 }
