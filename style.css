@@ -36,7 +36,6 @@ h6 {
   background-size: cover;
 }
 
-
 @media (min-width: 992px) {
   .pf-header {
     height: 100vh;
@@ -137,6 +136,10 @@ footer{
   .skill-icon-container{
     margin-bottom: 0rem;
   }
+}
+
+.portfolio-card-deck{
+  margin-bottom: 3rem;
 }
 
 .prof-pic{
