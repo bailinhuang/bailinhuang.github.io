@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "live-server"
+    "test": "live-server",
+    "install": "npm i --save bootstrap"
   },
   "repository": {
     "type": "git",
