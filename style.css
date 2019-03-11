@@ -140,6 +140,11 @@ footer{
   margin-bottom: 1.5rem;
 }   
 
+.prof-pic{
+  width: 60%;
+  height: auto;
+}
+
 @media(min-width: 425px){
   .skill-icon-row .skill-icon-container{
     flex-basis: 50%; 
@@ -150,6 +155,10 @@ footer{
   .skill-icon-row .skill-icon-container{
     flex-basis: 25%; 
   }   
+  
+  .prof-pic{
+    width: 30%;
+  }
 }
 
 @media(min-width: 1024px){
@@ -160,28 +169,17 @@ footer{
 
 .container-prof-pic{
   margin: 0%;
-  width: 30%;
+  width: 60%;
   height: 50%;
   margin-bottom: 2rem;
 }
 
 .skill-icon-container{
   margin-bottom: 1rem;
-}
-
-@media(min-width:992){
-  .skill-icon-container{
-    margin-bottom: 0rem;
-  }
-}
+} 
 
 .portfolio-card-deck{
   margin-bottom: 3rem;
-}
-
-.prof-pic{
-  width: 30%;
-  height: auto;
 }
 
 .about-content-row{
