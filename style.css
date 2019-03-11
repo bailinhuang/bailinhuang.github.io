@@ -50,11 +50,7 @@ h6 {
   margin: 0;
   padding: 0;
   color: white;
-}
-
-@media(min-width:1900px){ 
-  padding: 2rem 4rem;
-}
+} 
 
 .btn-xl {
   padding: 1.3rem 2.7rem;
@@ -65,6 +61,10 @@ section{
   padding-bottom: 4rem; 
   /* background-color: #95A5BE; */
   background-color: #3D567F;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 footer{ 
@@ -74,8 +74,8 @@ footer{
   margin-bottom: 0rem;
 }
  
-.bg-white{
-  background-color: white;
+.background-primary{
+  background-color: rgba(242,242,242,0.7);
 }
 
 .experience-card-deck{
@@ -114,15 +114,29 @@ footer{
   color: #3D567F;
   height: 7rem;
   width: 7rem;
-  display: block;
+  display: flex;
   line-height: 7.5rem;
   font-size: 2.25rem;
-  box-shadow:  0 0 3px  rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0 3px  rgba(0, 0, 0, 0.1); 
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.service-icon img{
+  width: 35%;
+  fill: #3D567F;
+  color: #3D567F;
 }
 
 .skill-icon-row{
   display: flex;
   justify-content: center;
+}
+
+.skill-icon-row .skill-icon-container{
+  flex-basis: 20%;
+  margin-bottom: 1.5rem;
 }
 
 .container-prof-pic{
