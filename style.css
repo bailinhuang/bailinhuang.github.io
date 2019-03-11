@@ -131,12 +131,31 @@ footer{
 
 .skill-icon-row{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .skill-icon-row .skill-icon-container{
-  flex-basis: 20%;
+  flex-basis: 100%;
+  width: 100vh;
   margin-bottom: 1.5rem;
+}   
+
+@media(min-width: 425px){
+  .skill-icon-row .skill-icon-container{
+    flex-basis: 50%; 
+  }   
+}
+
+@media(min-width: 768px){
+  .skill-icon-row .skill-icon-container{
+    flex-basis: 25%; 
+  }   
+}
+
+@media(min-width: 1024px){
+  .skill-icon-row .skill-icon-container{
+    flex-basis: 10%; 
+  }   
 }
 
 .container-prof-pic{
