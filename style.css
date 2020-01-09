@@ -34,15 +34,7 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media (min-width: 992px) {
-  .pf-header {
-    height: 100vh;
-  }
-  .pf-header h1 {
-    font-size: 5.5rem;
-  }
+  background-attachment: fixed;
 }
 
 .pf-header h1 {
@@ -58,8 +50,7 @@ h6 {
 
 section{
   padding-top: 4rem;
-  padding-bottom: 4rem; 
-  /* background-color: #95A5BE; */
+  padding-bottom: 4rem;
   background-color: #3D567F;
   min-height: 100vh;
   display: flex;
@@ -81,26 +72,54 @@ footer{
 .experience-card-deck{
   margin-bottom: 3rem;
 }
-/* 576 767 */
 
 .exp-img-container{
   padding: 1rem 1.5rem;
   box-sizing: content-box;
-  height: 5rem; 
 }
 
-@media (min-width: 992px){ 
-  .exp-img-container{
-    padding: 3rem 3.5rem;
-    box-sizing: content-box;
-    height: 5rem; 
-  }
+
+.container-prof-pic{
+  margin: 0%;
+  width: 60%;
+  height: 50%;
+  margin-bottom: 2rem;
 }
+
+.skill-icon-container{
+  margin-bottom: 1rem;
+} 
+
+.portfolio-card-deck{
+  margin-bottom: 3rem;
+}
+
+.about-content-row{
+  justify-content: center;
+}
+
+.about-content{
+  max-width: 30rem;
+  margin: 0;
+}
+
+.footer{
+  padding-top: 2rem; 
+}
+
+.social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #3D567F;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
 
 .experience-card-image{
-  /* padding-top: 2rem;
-  width: 50%;
-  height: auto; */
   width: 100%;
 }
 
@@ -145,6 +164,21 @@ footer{
   height: auto;
 }
 
+@media (min-width: 992px){ 
+  .pf-header {
+    height: 100vh;
+  }
+  .pf-header h1 {
+    font-size: 5.5rem;
+  }
+
+  .exp-img-container{
+    padding: 3rem 3.5rem;
+    box-sizing: content-box;
+  }
+}
+
+
 @media(min-width: 425px){
   .skill-icon-row .skill-icon-container{
     flex-basis: 50%; 
@@ -164,6 +198,9 @@ footer{
     font-size: 4rem; 
   } 
 
+  .experience-card-deck .card{
+    width: 30rem;
+  }
 }
 
 @media(min-width: 1024px){
@@ -174,43 +211,4 @@ footer{
   .pf-header{
     background-attachment: fixed;
   }
-}
-
-.container-prof-pic{
-  margin: 0%;
-  width: 60%;
-  height: 50%;
-  margin-bottom: 2rem;
-}
-
-.skill-icon-container{
-  margin-bottom: 1rem;
-} 
-
-.portfolio-card-deck{
-  margin-bottom: 3rem;
-}
-
-.about-content-row{
-  justify-content: center;
-}
-
-.about-content{
-  max-width: 30rem;
-  margin: 0;
-}
-
-.footer{
-  padding-top: 2rem; 
-}
-
-.social-link {
-  display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  background-color: #3D567F;
-  transition: background-color 0.15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
