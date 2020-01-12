@@ -9,6 +9,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	});
 });
 
+particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // 	anchor.addEventListener('click', function (e) {
 // 		var e = document.getElementsByClassName("addAnimation");
