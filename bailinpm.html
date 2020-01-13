@@ -8,6 +8,7 @@
   <title>Bailin Huang</title>
 
   <!-- Custom Fonts -->
+  <link rel='icon' href='./icons/huang.svg' type='image/x-icon'/ >
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -23,6 +24,24 @@
 </head>
 
 <body>
+  <a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#">Menu</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="https://bailinhuang.github.io/">Curriculum Vitae</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#pf-header">Project Managing</a>
+      </li>
+    </ul>
+  </nav>
+
+  
   <header class="pf-header d-flex" id="pf-header">
     <div class="particles-container" id="particles-js">
       <div class="hero">
@@ -44,7 +63,7 @@
               <div class="row">
                 <div class="col">
                   <div class="exp-img-container">
-                    <h2>Diseñador</h2>
+                    <h3>Diseñador</h3>
                   </div>
                 </div>
               </div>
@@ -63,7 +82,7 @@
               <div class="row">
                 <div class="col">
                   <div class="exp-img-container">
-                      <h2>Product Owner</h2>
+                      <h3>Product Owner</h3>
                   </div>
                 </div>
               </div>
@@ -238,6 +257,13 @@
 
   <script src="./js/particles.min.js"></script>
   <script src="./js/main.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+			  crossorigin="anonymous"></script>
+  
+  <script src="js/menu.js"></script>
+		
 </body>
 
 </html>
