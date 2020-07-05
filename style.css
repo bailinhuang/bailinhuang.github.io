@@ -137,7 +137,6 @@ h6 {
 }
 
 .pf-header-bg{  
-  background-image: url("./img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,16 +146,13 @@ h6 {
 }
 
 .pf-header{  
+  background-image: url("./img/space1.jpg");
   min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   background-color: #3D567F;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .particles-container{
@@ -198,11 +194,27 @@ section{
   align-content: center;
 }
 
+section, footer, .pf-header{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills{
+  background-image: url('./img/space3.jpg');
+}
+
+#experience{
+  background-image: url('./img/space4.jpg');
+}
+
 footer{ 
   text-align: center;
   padding-bottom: 2rem;
   background-color: #3D567F;
   margin-bottom: 0rem;
+
 }
  
 .background-primary{
@@ -214,7 +226,10 @@ footer{
 }
 
 .exp-img-container {
-	padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  padding: 1rem 1.5rem;
 	box-sizing: content-box;
 }
 
@@ -248,10 +263,9 @@ footer{
   margin: 0;
 }
 
-
-
 .footer{
   padding-top: 2rem; 
+  background-image: url('./img/space1.jpg');
 }
 
 .social-link {
@@ -264,7 +278,6 @@ footer{
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-
 
 .experience-card-image{
   width: 100%;
@@ -321,6 +334,7 @@ footer{
 
   .exp-img-container{
     padding: 3rem 3.5rem 0 3rem;
+    min-height: 8rem;
     box-sizing: content-box;
   }
 }
