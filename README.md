@@ -1,6 +1,5 @@
 # Web CV and Portfolio 
 
-Access at
+Access at bailinhuang.github.io 
 
-bailinhuang.github.io or
-https://naughty-noether-d40030.netlify.com/
+or open locally with npm i and npm test
