@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro';
+  cursor: url('./assets/icons/astronaut.svg'), auto;
 }
 
 p{
@@ -21,6 +22,10 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+
+button:hover, a:hover{
+  cursor: url('./assets/icons/astronaut-color.svg'), pointer !important;
 }
 
 .h2-title{
@@ -135,7 +140,7 @@ h6 {
 }
 
 .pf-header{  
-  background-image: url("./img/space1.jpg");
+  background-image: url("./assets/img/space1.jpg");
   min-height: 30rem;
   position: relative;
   display: table;
@@ -191,6 +196,10 @@ section, footer, .pf-header{
   background-attachment: fixed;
 }
 
+#about{
+  max-height: 80vh;
+}
+
 footer{ 
   text-align: center;
   padding-bottom: 2rem;
@@ -200,16 +209,20 @@ footer{
 }
  
 /* backgrounds */
+#education, #portfolio, #about{
+  background-image: url('./assets/img/rocket1.jpg');
+}
+
 #skills{
-  background-image: url('./img/space3.jpg');
+  background-image: url('./assets/img/space3.jpg');
 }
 
 #experience{
-  background-image: url('./img/space4.jpg');
+  background-image: url('./assets/img/space4.jpg');
 }
 
 #footer{
-  background-image: url('./img/space1.jpg');
+  background-image: url('./assets/img/space1.jpg');
 }
 
 .background-primary{

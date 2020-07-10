@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'default-icons'; 
+    src: url('../icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.icon-sql:before{
+    content: url(\sql-file-format-symbol.svg); 
+        
+    width: 25px;
+    height: 25px;
+}
