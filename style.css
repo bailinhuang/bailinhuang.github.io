@@ -229,10 +229,6 @@ section, footer, .pf-header{
   background-attachment: fixed;
 }
 
-#about{
-  max-height: 80vh;
-}
-
 footer{ 
   text-align: center;
   padding-bottom: 2rem;
@@ -242,9 +238,9 @@ footer{
 }
  
 /* backgrounds */
-#education, #portfolio, #about{
+/* #education, #portfolio, #about{
   background-image: url('./assets/img/rocket1.jpg');
-}
+} */
 
 #skills{
   background-image: url('./assets/img/space3.jpg');
@@ -431,10 +427,6 @@ footer{
   .skill-icon-row .skill-icon-container{
     flex-basis: 10%; 
   }   
-  
-  .pf-header{
-    background-attachment: fixed;
-  }
   
   .rocket-container{
     left: 90%;

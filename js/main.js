@@ -110,14 +110,26 @@ class TypeWriter {
 			this.wordIndex++;
 		}
 	}
+  }  
+
+  const iOS = () => {
+	return [
+	  'iPad Simulator',
+	  'iPhone Simulator',
+	  'iPod Simulator',
+	  'iPad',
+	  'iPhone',
+	  'iPod'
+	].some(function(exactPlatformString) {
+	  return navigator.platform === exactPlatformString
+	});
   }
-  
   
   // Init On DOM Load
   document.addEventListener('DOMContentLoaded', init);
   
   // Init App
-  function init() {
+  const init = () => {
 	const txtElement = document.querySelector('.txt-type');
 	const words = 
 	[
@@ -131,4 +143,8 @@ class TypeWriter {
 	// Init TypeWriter
 	const typewriter = new TypeWriter(txtElement, words, wait);
 	setTimeout(typewriter.showTypingMessage, 2000);
+	const iOSDevice = iOS();
+	if (iOSDevice) {
+		alert(iOSDevice);	
+	}
   }
