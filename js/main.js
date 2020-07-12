@@ -12,6 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.getElementById("rocket-button-color").addEventListener('click', function (e) {
 	e.preventDefault();
 	const rocket = document.getElementById("rocket-button-launch");
+	document.getElementById("rocket-button-launch").style = 'visibility:hidden';
 	rocket.style = 'visibility: visible';
 	document.getElementById("pf-header").scrollIntoView({
 		behavior: 'smooth',
