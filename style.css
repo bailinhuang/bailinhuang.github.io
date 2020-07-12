@@ -372,6 +372,18 @@ footer{
   border-radius: 50%;
 }
 
+#rocket-button-color, #rocket-button-launch{
+  max-height: 4rem;
+  position: fixed;
+  top: 85%;
+  left: 90%;
+}
+
+#rocket-button-launch{
+  visibility: hidden;
+}
+
+
 @media (min-width: 992px){ 
 
   .pf-header h1{

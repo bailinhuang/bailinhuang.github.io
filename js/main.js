@@ -9,6 +9,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	});
 });
 
+document.getElementById("rocket-button-color").addEventListener('click', function (e) {
+	e.preventDefault();
+	const rocket = document.getElementById("rocket-button-launch");
+	rocket.style = 'visibility: visible';
+	document.getElementById("pf-header").scrollIntoView({
+		behavior: 'smooth',
+		block: 'start'
+	});
+	setTimeout(() =>{ const rocket = document.getElementById("rocket-button-launch");
+	rocket.style = 'visibility: hidden'}, 1000)
+})
+
 particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
   console.log('callback - particles.js config loaded');
 });
@@ -118,5 +130,5 @@ class TypeWriter {
 	const wait = 2000;
 	// Init TypeWriter
 	const typewriter = new TypeWriter(txtElement, words, wait);
-	typewriter.showTypingMessage();
+	setTimeout(typewriter.showTypingMessage, 2000);
   }
