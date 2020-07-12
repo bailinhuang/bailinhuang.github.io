@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Space Mono";
+  src: 
+       url("./assets/fonts/Space_Mono/SpaceMono-Regular.ttf") format("truetype"),
+       url("./assets/fonts/Space_Mono/SpaceMono-Bold.ttf") format("truetype"),
+       url("./assets/fonts/Space_Mono/SpaceMono-Italic.ttf") format("truetype"),
+       url("./assets/fonts/Space_Mono/SpaceMono-BoldItalic.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: 
+  url("./assets/fonts/Orbitron/static/Orbitron-Black.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-Bold.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-ExtraBold.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-Medium.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-Regular.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-SemiBold.ttf") format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
 
 body,
 html {
@@ -6,8 +27,10 @@ html {
   text-align: center;
 }
 
+
 body {
-  font-family: 'Source Sans Pro';
+  /* font-family: 'Source Sans Pro'; */
+  /* font-family: 'Raleway'; */
   cursor: url('./assets/icons/astronaut.svg'), auto;
 }
 
@@ -15,13 +38,9 @@ p{
   font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Orbitron';
+  font-weight: normal;
 }
 
 button:hover, a:hover{
@@ -157,22 +176,35 @@ button:hover, a:hover{
   height: 100vh;
 }
 
-@media (min-width: 992px) {
-
-  .pf-header {
-    height: 100vh;
-  }
-  .pf-header h1 {
-    font-size: 5.5rem;
-  }
-}
-
 .pf-header h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
   color: white;
 } 
+
+.txt-type{
+  position: relative;
+}
+
+.txt-type:after {
+  content: "";
+  position: absolute;
+  margin-left: 5px;
+  width: 2px;
+  height: 100%;
+  border-right: 0.2rem solid white;
+  animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 .btn-xl {
   padding: 1.3rem 2.7rem;
@@ -341,11 +373,12 @@ footer{
 }
 
 @media (min-width: 992px){ 
+
+  .pf-header h1{
+    font-size: 3rem;
+  }
   .pf-header {
     height: 100vh;
-  }
-  .pf-header h1 {
-    font-size: 5.5rem;
   }
 
   .exp-img-container{
@@ -369,10 +402,6 @@ footer{
   .prof-pic{
     width: 30%;
   }
-    
-  .pf-header h1 {
-    font-size: 4rem; 
-  } 
 }
 
 @media(min-width: 1024px){

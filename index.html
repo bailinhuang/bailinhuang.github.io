@@ -8,27 +8,28 @@
   <title>Bailin Huang</title>
 
   <!-- Custom Fonts -->
-  <link rel='icon' href='./icons/huang.svg' type='image/x-icon'/ >
+  <link rel='icon' href='./icons/huang.svg' type='image/x-icon'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link href="./icons/icons.css" rel="stylesheet">
-  <link href="./icons/spring-logo.svg" rel="stylesheet">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link href="./assets/icons/icons.css" rel="stylesheet">
+  <link href="./assets/icons/spring-logo.svg" rel="image/svg+xml">
 </head>
 
 <body>
   <header class="pf-header d-flex" id="pf-header">
     <div class="particles-container" id="particles-js">
       <div class="hero">
-        <h1 class="mb-1">Bailin Huang</h1>
-        <a class="btn btn-dark btn-xl main-btn" href="#education">My Education</a>
+        <h1 class="mb-1 sr-only" style="overflow: hidden;">Bailin Huang</h1>
+        <h1 class="mb-1" aria-hidden="true">
+          <span class="text-white txt-type" style="font-family: Orbitron;"></span></h1>
       </div>
     </div>
     <div class="overlay"></div>
@@ -52,7 +53,7 @@
               <div class="row">
                 <div class="col">
                   <div class="card-body">
-                    <p class="card-text exp-card-text">Coursing fourth year of Computer Science Undergraduate Degree at the
+                    <p class="card-text exp-card-text">Computer Science Undergraduate Degree at the
                       University of Costa Rica.</p>
                   </div>
                 </div>
@@ -102,18 +103,10 @@
       <div class="row skill-icon-row">
         <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="devicon-java-plain"></i>
+            <i class="devicon-javascript-plain"></i>
           </span>
           <h4>
-            <strong>Java</strong>
-          </h4>
-        </div>
-        <div class="skill-icon-container">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="devicon-csharp-plain"></i>
-          </span>
-          <h4>
-            <strong>C#</strong>
+            <strong>JavaScript</strong>
           </h4>
         </div>
         <div class="skill-icon-container">
@@ -134,10 +127,18 @@
         </div>
         <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <img src="./icons/spring-logo.svg" alt="">
+            <i class="devicon-java-plain"></i>
           </span>
           <h4>
-            <strong>Spring</strong>
+            <strong>Java</strong>
+          </h4>
+        </div>
+        <div class="skill-icon-container">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="devicon-csharp-plain"></i>
+          </span>
+          <h4>
+            <strong>C#</strong>
           </h4>
         </div>
         <div class="skill-icon-container">
@@ -201,18 +202,12 @@
         <div class="card-deck portfolio-card-deck">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Work Hours Tracker</h4>
+              <h4 class="card-title">Hours Tracker</h4>
               <p class="card-text">Fullstack developer of a web application for tracking projects and work
                 hours for the Tropicalización de la Tecnología community service of the
                 University of Costa Rica.
                 Frontend was developed using Angular 8, NgRx, and Material Design.
                 Backend was developed using Spring Boot, Hibernate and MySQL.</p>
-                <p>
-                  <a  class="btn btn-dark" href="https://github.com/bailinhuang/TropicalizacionHorasFrontend" target="blank">
-                    View Frontend Repository</a>
-                </p>
-                <a  class="btn btn-dark" href="https://github.com/josed1608/TropicalizacionHorasBackend"target="blank">
-                  View Backend Repository</a>
             </div>
           </div>
           <div class="card">
@@ -223,16 +218,14 @@
                 Developed using React and Redux for the frontend, Spring Boot and
                 MongoDB for the backend. Firebase was used for handling user login.
                 Node and Socket.IO was used for live updates</p>
-                <a  class="btn btn-dark" href="https://github.com/bailinhuang/bestbai-shop" target="blank">View Repository</a>
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Reservation System</h4>
-              <p class="card-text">.NET developer and Scrum Master in the email and notifications module for the
-                University of Costa Rica's
-                reservation system for physical spaces such as conference rooms, classrooms and others.
-                Developed in C# using .NET MVC and Entity Framework and Microsoft SQL Server.
+              <h4 class="card-title">Event Social Media</h4>
+              <p class="card-text">Fullstack developer for a social media web application to explore, create and share events for the Web Engineering course of University of Málaga. 
+                Developed using React and TypeScript for the frontend application with hooks and Firebase for OAUTH login. 
+                Backend application was developed using Flask and Python 3 with MongoDB as the database.
               </p>
             </div>
           </div>
@@ -247,24 +240,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h2 class="text-white">Experience</h2>
-          <p class="lead mb-5 text-white">Computer Sciences at University of Costa Rica</p>
+          <h2 class="text-white mb-5">Experience</h2>
         </div>
       </div>
       <div class="card-deck experience-card-deck">
-        <div class="card transparent-card">
-          <div class="row">
-            <div class="col">
-              <div class="exp-img-container">
-                <img class="card-img-top experience-card-image" src="./assets/img/midware-logo.png" alt="logo of Midware">
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-text exp-card-text">Currently working as a JavaScript Full-Stack Developer that creates solutions 
-              on ongoing projects for internal and external stakeholders by interacting with other teams, ERP systems, and other technological platforms.</p>
-          </div>
-        </div>
         <div class="card transparent-card">
           <div class="row">
             <div class="col">
@@ -278,6 +257,19 @@
               Managed the frontend team and project.
               Recruited and introduced new team members to their position and responsabilities.
             </p>
+          </div>
+        </div>
+        <div class="card transparent-card">
+          <div class="row">
+            <div class="col">
+              <div class="exp-img-container">
+                <img class="card-img-top experience-card-image" src="./assets/img/cicanum-logo.png" alt="logo of Midware">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text exp-card-text">Tasks included database backup and recovery, data handling, Visual Basic
+                legacy software support and maintenance. Developed a tool to compare and check dosimeter radiation levels.</p>
           </div>
         </div>
       </div>
