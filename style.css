@@ -192,7 +192,7 @@ button:hover, a:hover{
   position: absolute;
   margin-left: 5px;
   width: 2px;
-  height: 100%;
+  height: 2rem;
   border-right: 0.2rem solid white;
   animation: blink 0.7s infinite ease;
 }
@@ -391,8 +391,12 @@ footer{
   }
   .pf-header {
     height: 100vh;
-  }
+  }    
 
+  .txt-type:after {
+    height: 3rem;
+  }
+  
   .exp-img-container{
     min-height: 8rem;
     box-sizing: content-box;
