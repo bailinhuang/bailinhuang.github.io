@@ -143,8 +143,4 @@ class TypeWriter {
 	// Init TypeWriter
 	const typewriter = new TypeWriter(txtElement, words, wait);
 	setTimeout(typewriter.showTypingMessage, 2000);
-	const iOSDevice = iOS();
-	if (iOSDevice) {
-		alert(iOSDevice);	
-	}
   }
