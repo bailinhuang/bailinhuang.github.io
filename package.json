@@ -1,11 +1,13 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Access at bailinhuang.github.io",
   "main": "index.js",
   "scripts": {
     "test": "live-server",
-    "install": "npm i --save bootstrap"
+    "install": "npm i --save bootstrap",
+    "start:dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,11 +21,25 @@
   "homepage": "https://github.com/bailinhuang/portfolio#readme",
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "css-loader": "^4.0.0",
     "jquery": "^3.3.1",
     "jquery-scroll-indicator-bullets": "^2.0.0",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "styles-loader": "^2.0.0"
   },
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "keywords": []
 }

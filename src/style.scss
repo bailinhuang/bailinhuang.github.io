@@ -1,0 +1,433 @@
+@font-face {
+  font-family: "Orbitron";
+  src: 
+  url("./assets/fonts/Orbitron/static/Orbitron-Black.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-Bold.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-ExtraBold.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-Medium.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-Regular.ttf") format("truetype"),
+  url("./assets/fonts/Orbitron/static/Orbitron-SemiBold.ttf") format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+
+body {
+  /* font-family: 'Source Sans Pro'; */
+  /* font-family: 'Raleway'; */
+  cursor: url('./assets/icons/astronaut.svg'), auto;
+}
+
+p{
+  font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Orbitron';
+  font-weight: normal;
+}
+
+button:hover, a:hover{
+  cursor: url('./assets/icons/astronaut-color.svg'), pointer !important;
+}
+
+.h2-title{
+  margin-bottom: 3rem;
+}
+
+/* Side Menu */
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: #1D809F;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+.hero{
+  position: absolute;
+}
+
+.pf-header-bg{  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 8rem;
+  padding-bottom: 8rem; 
+}
+
+.pf-header{  
+  background-image: url("./assets/img/space1.jpg");
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  background-color: #3D567F;
+}
+
+.particles-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.pf-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+} 
+
+.txt-type{
+  position: relative;
+}
+
+.txt-type:after {
+  content: "";
+  position: absolute;
+  margin-left: 5px;
+  width: 2px;
+  height: 2rem;
+  border-right: 0.2rem solid white;
+  animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.btn-xl {
+  padding: 1.3rem 2.7rem;
+}
+
+section{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #3D567F;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+section, footer, .pf-header{
+  /* parallax */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer{ 
+  text-align: center;
+  padding-bottom: 2rem;
+  background-color: #3D567F;
+  margin-bottom: 0rem;
+  padding-top: 2rem; 
+}
+
+
+ 
+/* backgrounds */
+#education, #portfolio, #about{
+  background-image: radial-gradient(ellipse at top , #ffffff 0%,  #080e21 90%);
+}
+
+#skills{
+  background-image: url('./assets/img/space3.jpg');
+}
+
+#experience{
+  background-image: url('./assets/img/space4.jpg');
+}
+
+#footer{
+  background-image: url('./assets/img/space1.jpg');
+}
+
+.background-primary{
+  background-color: rgba(242,242,242,0.7);
+}
+
+.card{
+  min-width: 18rem;
+}
+
+.transparent-card{
+  background-color: transparent;
+  border: solid white;
+  color: white;
+}
+
+.experience-card-deck{
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.exp-img-container {
+  display: flex;
+  align-items: center;
+  min-height: 4rem;
+  padding: 1rem 1.5rem;
+  box-sizing: content-box;
+  background-color: white;
+}
+
+.container-prof-pic{
+  margin: 0%;
+  width: 60%;
+  height: 50%;
+  margin-bottom: 2rem;
+}
+
+.skill-icon-container{
+  margin-bottom: 1rem;
+} 
+
+.portfolio-card-deck{
+  margin-bottom: 3rem;
+}
+
+.about-content-row{
+  justify-content: center;
+}
+
+.short-width{
+  max-width: 30rem;
+  margin: 0;
+}
+
+.medium-width{
+  max-width: 50rem;
+  margin: 0;
+}
+
+
+.social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 3.7rem;
+  font-size: 1.5rem;
+  border: solid;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.experience-card-image{
+  width: 100%;
+}
+
+.exp-card-text{
+  margin: 1rem 3rem;
+  text-align: center;
+}
+
+.service-icon {
+  border: solid;
+  color: white;
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow:  0 0 3px  rgba(0, 0, 0, 0.1); 
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.service-icon img{
+  width: 35%;
+  fill: #3D567F;
+  color: #3D567F;
+}
+
+.skill-icon-row{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill-icon-row .skill-icon-container{
+  flex-basis: 100%;
+  width: 100vh;
+  margin-bottom: 1.5rem;
+}   
+
+.prof-pic{
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.rocket-container{
+  position: fixed;
+  top: 80%;
+  left: 80%;
+}
+
+#rocket-button-color, #rocket-button-launch{
+  height: 4rem;
+  position: fixed;
+  top: 85%;
+  left: 85%;
+}
+
+#rocket-button-launch{
+  visibility: hidden;
+}
+
+
+@media (min-width: 992px){ 
+
+  .pf-header h1{
+    font-size: 3rem;
+  }
+  .pf-header {
+    height: 100vh;
+  }    
+
+  .txt-type:after {
+    height: 3rem;
+  }
+
+  .exp-img-container{
+    min-height: 8rem;
+    box-sizing: content-box;
+  }
+}
+
+
+@media(min-width: 425px){
+  .skill-icon-row .skill-icon-container{
+    flex-basis: 50%; 
+  }   
+}
+
+@media(min-width: 768px){
+  .skill-icon-row .skill-icon-container{
+    flex-basis: 25%; 
+  }   
+  
+  .prof-pic{
+    width: 30%;
+  }
+}
+
+@media(min-width: 1024px){
+  .skill-icon-row .skill-icon-container{
+    flex-basis: 10%; 
+  }   
+  
+  .rocket-container{
+    left: 90%;
+  }
+  
+  #rocket-button-color, #rocket-button-launch{
+    top: 90%;
+    left: 90%;
+  }
+
+}
