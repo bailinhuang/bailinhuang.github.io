@@ -301,6 +301,10 @@ footer{
   justify-content: center;
 }
 
+.about-content-container{
+  align-items: center;;
+}
+
 .short-width{
   max-width: 30rem;
   margin: 0;
@@ -321,6 +325,10 @@ footer{
   border: solid;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.social-link :hover{
+  opacity: 0.5;
 }
 
 .experience-card-image{
@@ -364,7 +372,6 @@ footer{
 }   
 
 .prof-pic{
-  width: 60%;
   height: auto;
   border-radius: 50%;
 }
@@ -416,11 +423,7 @@ footer{
 @media(min-width: 768px){
   .skill-icon-row .skill-icon-container{
     flex-basis: 25%; 
-  }   
-  
-  .prof-pic{
-    width: 30%;
-  }
+  } 
 }
 
 @media(min-width: 1024px){
