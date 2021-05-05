@@ -36,8 +36,7 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="./assets/icons/icons.css" rel="stylesheet">
 </head>
@@ -55,58 +54,42 @@
   </header>
 
   <!-- Education -->
-  <section class="education bg-light" id="education">
+  <section class="education bg-light" id="experience">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h2 class="h2-title">Education</h2>
-          <div class="card-deck experience-card-deck">
-            <div class="card">
-              <div class="row">
-                <div class="col">
-                  <div class="exp-img-container">
-                    <img class="card-img-top experience-card-image" src="./assets/img/ucr-logo.png" alt="logo of ECCI">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="card-body">
-                    <p class="card-text exp-card-text">Computer Science Undergraduate Degree at the
-                      University of Costa Rica.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="row">
-                <div class="col">
-                  <div class="exp-img-container">
-                    <img class="card-img-top experience-card-image" src="./assets/img/logo-black.4495add9.svg"
-                      alt="logo of brainstation">
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text exp-card-text">Web Immersive Program, User Experience Design, and Android
-                  Fundamentals at Brainstation.</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="row">
-                <div class="col">
-                  <div class="exp-img-container">
-                    <img class="card-img-top experience-card-image" src="./assets/img/uma-logo.png"
-                      alt="logo of brainstation">
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text exp-card-text">Exchange student coursing Web Engineering, Project Management, and Software for Mobile Devices and Embedded Systems.</p>
+        <div class="col-lg-10 mx-auto">
+          <h2 class="mb-5">Experience</h2>
+        </div>
+      </div>
+      <div class="card-deck experience-card-deck">
+        <div class="card">
+          <div class="row">
+            <div class="col">
+              <div class="exp-img-container">
+                <img class="card-img-top experience-card-image" src="./assets/img/IBM_logo.svg" alt="logo of IBM">
               </div>
             </div>
           </div>
-          <a class="btn btn-dark btn-xl" href="#skills">Skills</a>
+          <div class="card-body">
+            <p class="card-text exp-card-text">Frontend Developer working on MCMP Enterprise Marketplace (EM), 
+              a cloud-based self-service application that lets you order and manage cloud services from IBM, AWS, Azure, Google, etc.
+              Implemented user stories, made UX decisions and rewrote components to become accessible. </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row">
+            <div class="col">
+              <div class="exp-img-container">
+                <img class="card-img-top experience-card-image" src="./assets/img/owera-logo.png" alt="logo of Vision Owera">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text exp-card-text">Developed business and communication strategies to achieve objectives and improve work processes.
+              Managed the frontend team and project.
+              Recruited and trained new team members to their position and responsabilities.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -116,8 +99,7 @@
   <section class="content-section text-white" id="skills">
     <div class="container">
       <div class="content-section-heading">
-        <h2 class>Skills</h2>
-        <h4 class="mb-4">Developer Skills</h4>
+        <h2 class="h2-title">Skills</h2>
       </div>
       <div class="row skill-icon-row">
         <div class="skill-icon-container">
@@ -153,6 +135,17 @@
           </h4>
         </div>
         <div class="skill-icon-container">
+          <span class="service-icon rounded-circle mx-auto mb-3"> 
+            <img src="./assets//icons/icon-w3c.svg" alt="w3c web accessibility web icon">
+          </span>
+          <h4>
+            <strong>Web Accessibility</strong>
+          </h4>
+        </div>
+      </div>
+      <div class="row mb-5 skill-icon-row">
+        
+        <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-java-plain"></i>
           </span>
@@ -162,27 +155,13 @@
         </div>
         <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <!-- <i class="devicon-csharp-plain"></i> -->
-            <img src="./assets/icons/spring-logo.svg" alt="">
+            <i class="devicon-spring-plain"></i>
           </span>
           <h4>
             <strong>Spring</strong>
           </h4>
         </div>
-      </div>
-
-      <h4 class="mb-4">Other Skills</h4>
-
-      <div class="row mb-5 skill-icon-row">
-        <div class="col-lg-2 col-md-6 skill-icon-container">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="devicon-trello-plain"></i>
-          </span>
-          <h4>
-            <strong>Agile</strong>
-          </h4>
-        </div>
-        <div class="col-lg-2 col-md-6 skill-icon-container">
+        <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fab fa-figma"></i>
           </span>
@@ -190,7 +169,7 @@
             <strong>Figma</strong>
           </h4>
         </div>
-        <div class="col-lg-2 col-md-6 skill-icon-container">
+        <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="devicon-photoshop-plain"></i>
           </span>
@@ -198,7 +177,7 @@
             <strong>Photoshop</strong>
           </h4>
         </div>
-        <div class="col-lg-2 col-md-6 skill-icon-container">
+        <div class="skill-icon-container">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-camera-retro"></i>
           </span>
@@ -207,7 +186,6 @@
           </h4>
         </div>
       </div>
-      <a class="btn btn-dark btn-xl " href="#portfolio">My Portfolio</a>
   </section>
 
   <!-- Portfolio -->
@@ -250,52 +228,62 @@
             </div>
           </div>
         </div>
-        <a class="btn btn-dark btn-xl" href="#experience">My Experience</a>
       </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section class="content-section" id="experience">
+  <section class="content-section" id="education">
     <div class="container">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2 class="text-white mb-5">Experience</h2>
-        </div>
-      </div>
-      <div class="card-deck experience-card-deck">
-        <div class="card transparent-card">
-          <div class="row">
-            <div class="col">
-              <div class="exp-img-container">
-                <img class="card-img-top experience-card-image" src="./assets/img/owera-logo.png" alt="logo of Vision Owera">
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-text exp-card-text">Developed business and communication strategies to achieve objectives and improve work processes.
-              Managed the frontend team and project.
-              Recruited and introduced new team members to their position and responsabilities.
-            </p>
-          </div>
-        </div>
-        <div class="card transparent-card">
-          <div class="row">
-            <div class="col">
-              <div class="exp-img-container">
-                <img class="card-img-top experience-card-image" src="./assets/img/cicanum-logo.png" alt="logo of Midware">
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <p class="card-text exp-card-text">Tasks included database backup and recovery, data handling, Visual Basic
-                legacy software support and maintenance. Developed a tool to compare and check dosimeter radiation levels.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
         <div class="col">
-          <a class="btn btn-dark btn-xl" href="#about">About</a>
+          <h2 class="text-white h2-title">Education</h2>
+          <div class="card-deck experience-card-deck">
+            <div class="card transparent-card">
+              <div class="row">
+                <div class="col">
+                  <div class="exp-img-container">
+                    <img class="card-img-top experience-card-image" src="./assets/img/ucr-logo.png" alt="logo of ECCI">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-body">
+                    <p class="card-text exp-card-text">Computer Science Undergraduate Degree at the
+                      University of Costa Rica.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card transparent-card">
+              <div class="row">
+                <div class="col">
+                  <div class="exp-img-container">
+                    <img class="card-img-top experience-card-image" src="./assets/img/logo-black.4495add9.svg"
+                      alt="logo of brainstation">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text exp-card-text">Web Immersive Program, User Experience Design, and Android
+                  Fundamentals at Brainstation.</p>
+              </div>
+            </div>
+            <div class="card transparent-card">
+              <div class="row">
+                <div class="col">
+                  <div class="exp-img-container">
+                    <img class="card-img-top experience-card-image" src="./assets/img/uma-logo.png"
+                      alt="logo of brainstation">
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text exp-card-text">Exchange student coursing Web Engineering, Project Management, and Software for Mobile Devices and Embedded Systems.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -313,7 +301,7 @@
         <div class="col about-content">
           <p class="mb-1">I love adventures, traveling, and planning roadtrips! I take photos wherever I go, you can
             check them out on my <a  target="_blank" href="https://www.instagram.com/bailin.photo">Instagram</a>!</p>
-          <p class="mb-0">Say hi at: <a href="mailto:bailinhq@gmail.com">bailinhq@gmail.com</a></p>
+          <p class="mb-0">Say hi <a href="https://twitter.com/helloitsbai">@HelloItsBai</a></p>
         </div>
         <div class="col container-prof-pic">
           <img class="prof-pic" src="./assets/img/bailin2.jpg" alt="a photo of bailin">
@@ -327,17 +315,22 @@
     <div class="container">
       <ul class="list-inline">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/bailinhuang" target="_blank">
+          <a title="Twitter" class="social-link rounded-circle text-white mr-3" href="https://twitter.com/helloitsbai" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a title="LinkedIn" class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/bailinhuang" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/bailin.photo" target="_blank">
+          <a title="Instagram" class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/bailin.photo" target="_blank">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://github.com/bailinhuang" target="_blank">
+          <a title="Github" class="social-link rounded-circle text-white" href="https://github.com/bailinhuang" target="_blank">
             <i class="fab fa-github"></i>
             </i>
           </a>
