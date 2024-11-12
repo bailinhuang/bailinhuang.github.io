@@ -278,10 +278,14 @@ footer{
   align-items: center;
   min-height: 4rem;
   max-height: 4rem;
-  padding: 4rem;
+  padding: 2rem;
   box-sizing: content-box;
   background-color: white;
 }
+
+.card-img-top {
+  height: 100%;
+} 
 
 .container-prof-pic{
   margin: 0%;
@@ -292,14 +296,6 @@ footer{
 
 .portfolio-card-deck{
   margin-bottom: 3rem;
-}
-
-/* .about-content-row{
-  justify-content: center;
-} */
-
-.about-content-container{
-  align-items: center;;
 }
 
 .short-width{
@@ -369,7 +365,8 @@ footer{
 }   
 
 .prof-pic{
-  height: auto;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -410,6 +407,9 @@ footer{
   }
 }
 
+.about-content-container {
+  display: block;
+}
 
 @media(min-width: 425px){
   .skill-icon-row .skill-icon-container{
@@ -421,6 +421,11 @@ footer{
   .skill-icon-row .skill-icon-container{
     flex-basis: 25%; 
   } 
+
+  .about-content-container {
+    display: flex;
+  }
+  
 }
 
 @media(min-width: 1024px){
@@ -436,5 +441,4 @@ footer{
     top: 90%;
     left: 90%;
   }
-
 }
